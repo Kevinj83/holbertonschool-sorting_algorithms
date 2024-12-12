@@ -6,16 +6,15 @@
  */
 void print_list(const listint_t *list)
 {
-    int first = 1;
+	int first = 1;
 
-    while (list)
-    {
-        if (!first)
-            printf(", ");
-        printf("%d", list->n);
-        first = 0;
-        list = list->next;
-    }
-    printf("\n");
+	while (list)
+	{
+		if (!first)
+			printf(", ");
+		printf("%d", list->n);
+		first = 0;
+		list = list->next;
+	}
+	printf("\n");
 }
-
